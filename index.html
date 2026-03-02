@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>0xcasuwu Research Repository</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <nav class="main-nav">
@@ -389,44 +388,6 @@
         </div>
     </section>
 
-    <!-- Key Findings -->
-    <section class="key-findings">
-        <h2>Key Findings Across Research</h2>
-        <div class="findings-grid">
-            <div class="finding">
-                <div class="finding-number">460 TWh</div>
-                <div class="finding-label">AI Energy Consumption (2024)</div>
-            </div>
-            <div class="finding">
-                <div class="finding-number">$17B+</div>
-                <div class="finding-label">2024 US Election Spending</div>
-            </div>
-            <div class="finding">
-                <div class="finding-number">71%</div>
-                <div class="finding-label">Psilocybin Response Rate</div>
-            </div>
-            <div class="finding">
-                <div class="finding-number">750</div>
-                <div class="finding-label">US Military Bases Worldwide</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Visualization Preview -->
-    <section class="visualization-preview">
-        <h2>Data Visualizations</h2>
-        <div class="charts-container">
-            <div class="chart-box">
-                <h3>Research Areas Distribution</h3>
-                <canvas id="researchChart"></canvas>
-            </div>
-            <div class="chart-box">
-                <h3>AI Energy Growth Projection</h3>
-                <canvas id="energyChart"></canvas>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="footer-content">
             <p>0xcasuwu Research Repository</p>
@@ -458,78 +419,6 @@
             });
         });
 
-        // Research Areas Chart
-        const researchCtx = document.getElementById('researchChart').getContext('2d');
-        new Chart(researchCtx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Politics', 'Neuroscience', 'Bitcoin', 'Technology', 'Free-Masonry'],
-                datasets: [{
-                    data: [3, 3, 1, 1, 1],
-                    backgroundColor: [
-                        'rgba(220, 53, 69, 0.8)',
-                        'rgba(75, 192, 192, 0.8)',
-                        'rgba(255, 193, 7, 0.8)',
-                        'rgba(54, 162, 235, 0.8)',
-                        'rgba(153, 102, 255, 0.8)'
-                    ],
-                    borderColor: '#1a1a2e',
-                    borderWidth: 3
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                        labels: { color: '#e0e0e0', padding: 15, font: { size: 12 } }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': ' + context.raw + ' papers';
-                            }
-                        }
-                    }
-                }
-            }
-        });
-
-        // AI Energy Growth Chart
-        const energyCtx = document.getElementById('energyChart').getContext('2d');
-        new Chart(energyCtx, {
-            type: 'line',
-            data: {
-                labels: ['2020', '2022', '2024', '2026', '2028', '2030'],
-                datasets: [{
-                    label: 'AI Datacenter Energy (TWh)',
-                    data: [100, 180, 460, 800, 1200, 1800],
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        labels: { color: '#e0e0e0' }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: { color: '#a0a0a0' },
-                        grid: { color: 'rgba(255,255,255,0.1)' }
-                    },
-                    x: {
-                        ticks: { color: '#a0a0a0' },
-                        grid: { color: 'rgba(255,255,255,0.1)' }
-                    }
-                }
-            }
-        });
     </script>
 </body>
 </html>
