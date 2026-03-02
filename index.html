@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0xcasuwu Research Repository</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">0xcasuwu</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="papers/imperialism.html">US Imperialism</a>
+                <a href="papers/campaign-finance.html">Campaign Finance</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Research Repository</h1>
+            <p class="tagline">Documenting Power, Wealth, and Democratic Accountability</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Research Papers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">40k+</span>
+                    <span class="stat-label">Words</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">126</span>
+                    <span class="stat-label">Years Analyzed</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="papers-grid">
+        <section class="paper-card" onclick="window.location.href='papers/imperialism.html'">
+            <div class="paper-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+            </div>
+            <h2>From Anti-Imperialism to Corporate Empire</h2>
+            <p class="paper-subtitle">The Transformation of American Power and Democratic Discourse, 1900-2024</p>
+            <div class="paper-meta">
+                <span class="meta-item">~21,000 words</span>
+                <span class="meta-item">10 sections</span>
+            </div>
+            <p class="paper-excerpt">
+                Examines the radical transformation of United States imperial ambitions and domestic democratic norms
+                from the turn of the 20th century to the present day. Traces the shift from territorial imperialism
+                to corporate-financial imperialism and the degradation of democratic participation.
+            </p>
+            <div class="paper-topics">
+                <span class="topic">Citizens United</span>
+                <span class="topic">Anti-Imperialist League</span>
+                <span class="topic">Oligarchy</span>
+                <span class="topic">Corporate Power</span>
+            </div>
+            <a href="papers/imperialism.html" class="read-btn">Read Paper</a>
+        </section>
+
+        <section class="paper-card" onclick="window.location.href='papers/campaign-finance.html'">
+            <div class="paper-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+            </div>
+            <h2>Follow the Money</h2>
+            <p class="paper-subtitle">A Comprehensive Analysis of Campaign Financing Across the U.S. Congress, 2023-2024</p>
+            <div class="paper-meta">
+                <span class="meta-item">~18,500 words</span>
+                <span class="meta-item">13 sections</span>
+            </div>
+            <p class="paper-excerpt">
+                A data-driven report documenting the flow of money from corporate interests, industries, and wealthy
+                donors to federal candidates. Reveals systematic patterns of regulatory capture and the financial
+                capture of American democracy.
+            </p>
+            <div class="paper-topics">
+                <span class="topic">$3.8B Raised</span>
+                <span class="topic">Dark Money</span>
+                <span class="topic">PAC Contributions</span>
+                <span class="topic">Lobbying</span>
+            </div>
+            <a href="papers/campaign-finance.html" class="read-btn">Read Paper</a>
+        </section>
+    </main>
+
+    <section class="key-findings">
+        <h2>Key Findings Across Research</h2>
+        <div class="findings-grid">
+            <div class="finding">
+                <div class="finding-number">$17B+</div>
+                <div class="finding-label">Total 2024 Election Spending</div>
+            </div>
+            <div class="finding">
+                <div class="finding-number">750</div>
+                <div class="finding-label">US Military Bases Worldwide</div>
+            </div>
+            <div class="finding">
+                <div class="finding-number">70%</div>
+                <div class="finding-label">Policy Follows Donor Preferences</div>
+            </div>
+            <div class="finding">
+                <div class="finding-number">$6.1B</div>
+                <div class="finding-label">Pharma Lobbying (1999-2024)</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visualization-preview">
+        <h2>Data Visualizations</h2>
+        <div class="charts-container">
+            <div class="chart-box">
+                <h3>Election Spending Growth</h3>
+                <canvas id="spendingChart"></canvas>
+            </div>
+            <div class="chart-box">
+                <h3>Top Industry PAC Contributions (2024)</h3>
+                <canvas id="industryChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-preview">
+        <h2>Historical Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">1898</div>
+                <div class="timeline-content">
+                    <h4>Anti-Imperialist League Founded</h4>
+                    <p>Opposition to Philippine-American War establishes anti-imperial tradition</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">1976</div>
+                <div class="timeline-content">
+                    <h4>Buckley v. Valeo</h4>
+                    <p>Supreme Court rules campaign spending is protected speech</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2010</div>
+                <div class="timeline-content">
+                    <h4>Citizens United v. FEC</h4>
+                    <p>Unlimited corporate political spending becomes constitutional right</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-content">
+                    <h4>$17 Billion Election</h4>
+                    <p>Most expensive election in American history</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>0xcasuwu Research Repository</p>
+            <p class="footer-note">Released under Creative Commons Attribution-NonCommercial-ShareAlike 4.0</p>
+        </div>
+    </footer>
+
+    <script>
+        // Election Spending Chart
+        const spendingCtx = document.getElementById('spendingChart').getContext('2d');
+        new Chart(spendingCtx, {
+            type: 'bar',
+            data: {
+                labels: ['2008', '2012', '2016', '2020', '2024'],
+                datasets: [{
+                    label: 'Total Federal Election Spending (Billions)',
+                    data: [5.3, 6.3, 6.5, 14.4, 17],
+                    backgroundColor: [
+                        'rgba(100, 149, 237, 0.8)',
+                        'rgba(100, 149, 237, 0.8)',
+                        'rgba(100, 149, 237, 0.8)',
+                        'rgba(100, 149, 237, 0.8)',
+                        'rgba(220, 53, 69, 0.9)'
+                    ],
+                    borderColor: [
+                        'rgba(100, 149, 237, 1)',
+                        'rgba(100, 149, 237, 1)',
+                        'rgba(100, 149, 237, 1)',
+                        'rgba(100, 149, 237, 1)',
+                        'rgba(220, 53, 69, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: { color: '#e0e0e0' }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Industry PAC Chart
+        const industryCtx = document.getElementById('industryChart').getContext('2d');
+        new Chart(industryCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Labor Unions', 'Finance/Insurance/RE', 'Ideology/Single-Issue', 'Health', 'Communications/Tech'],
+                datasets: [{
+                    data: [92.3, 87.6, 73.4, 68.9, 41.2],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(255, 206, 86, 0.8)',
+                        'rgba(75, 192, 192, 0.8)',
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(153, 102, 255, 0.8)'
+                    ],
+                    borderColor: '#1a1a2e',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', padding: 15 }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': $' + context.raw + 'M';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

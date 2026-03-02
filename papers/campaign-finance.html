@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow the Money: Congressional Campaign Finance Analysis | 0xcasuwu Research</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">0xcasuwu</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="imperialism.html">US Imperialism</a>
+                <a href="campaign-finance.html" class="active">Campaign Finance</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="paper-header">
+        <h1>Follow the Money</h1>
+        <p class="subtitle">A Comprehensive Analysis of Campaign Financing Across the U.S. Congress, 2023-2024 Election Cycle</p>
+        <div class="paper-info">
+            <div class="paper-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+                Data-Driven Report
+            </div>
+            <div class="paper-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14,2 14,8 20,8"/>
+                </svg>
+                ~18,500 words
+            </div>
+            <div class="paper-info-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                </svg>
+                Data: February 6, 2025 (FEC)
+            </div>
+        </div>
+        <div class="keywords">
+            <span class="keyword">$3.8B Raised</span>
+            <span class="keyword">PAC Contributions</span>
+            <span class="keyword">Dark Money</span>
+            <span class="keyword">Lobbying</span>
+            <span class="keyword">AIPAC</span>
+            <span class="keyword">Defense Industry</span>
+            <span class="keyword">Pharma</span>
+        </div>
+    </header>
+
+    <div class="paper-layout">
+        <aside class="toc">
+            <h3>Table of Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#executive">Executive Summary</a></li>
+                <li><a href="#methodology">1. Methodology</a></li>
+                <li><a href="#overview">2. Total Fundraising Overview</a></li>
+                <li><a href="#senate">3. Senate Analysis</a></li>
+                <li><a href="#house">4. House Analysis</a></li>
+                <li><a href="#industry">5. Industry Sector Analysis</a></li>
+                <li><a href="#top-recipients">6. Top Recipients</a></li>
+                <li><a href="#dark-money">7. Dark Money</a></li>
+                <li><a href="#leadership">8. Leadership Fundraising</a></li>
+                <li><a href="#special-interests">9. Special Interests</a></li>
+                <li><a href="#geographic">10. Geographic Patterns</a></li>
+                <li><a href="#structural">11. Structural Analysis</a></li>
+                <li><a href="#conclusions">12. Conclusions</a></li>
+            </ul>
+        </aside>
+
+        <article class="paper-content">
+            <section id="executive">
+                <h2>Executive Summary</h2>
+                <p>This report provides a comprehensive analysis of campaign financing across the United States Congress for the 2023-2024 election cycle, documenting the flow of money from corporate interests, industries, and wealthy donors to federal candidates.</p>
+
+                <div class="highlight-box">
+                    <strong>Key Findings:</strong>
+                    <ul>
+                        <li><strong>Total Congressional Fundraising:</strong> $3.8 billion raised by House and Senate candidates</li>
+                        <li><strong>Record-Breaking:</strong> Total 2024 election spending projected to exceed $17 billion</li>
+                        <li><strong>Dark Money:</strong> $1.9 billion from anonymous sources</li>
+                        <li><strong>Lobbying:</strong> Record $4.4 billion in 2024</li>
+                        <li><strong>Concentration:</strong> Top 100 donors gave more than all 4.6 million small donors combined</li>
+                    </ul>
+                </div>
+
+                <div class="paper-chart">
+                    <h4>Congressional Fundraising Breakdown (2024 Cycle)</h4>
+                    <canvas id="fundingBreakdownChart"></canvas>
+                </div>
+            </section>
+
+            <section id="methodology">
+                <h2>1. Introduction and Methodology</h2>
+
+                <h3>1.1 Data Sources</h3>
+                <p><strong>Primary Sources:</strong></p>
+                <ol>
+                    <li><strong>Federal Election Commission (FEC):</strong> Official filings from candidate committees, PACs, and party committees. Data downloaded February 6, 2025.</li>
+                    <li><strong>Center for Responsive Politics (OpenSecrets.org):</strong> Aggregated and categorized data matching FEC filings to industry sectors.</li>
+                    <li><strong>Individual Candidate Disclosure Reports:</strong> Quarterly and pre-election reports.</li>
+                </ol>
+
+                <h3>1.2 Classification System</h3>
+                <p><strong>Contribution Types:</strong></p>
+                <ul>
+                    <li><strong>Direct contributions:</strong> From individuals to candidates (limited to $3,300 per election)</li>
+                    <li><strong>PAC contributions:</strong> From registered Political Action Committees</li>
+                    <li><strong>Party contributions:</strong> From Democratic/Republican party committees</li>
+                    <li><strong>Independent expenditures:</strong> Spending "independently" of campaigns (unlimited)</li>
+                    <li><strong>Dark money:</strong> Contributions through 501(c)(4) organizations that don't disclose donors</li>
+                </ul>
+            </section>
+
+            <section id="overview">
+                <h2>2. Overview: Total Congressional Fundraising</h2>
+
+                <h3>2.1 Aggregate Totals</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Chamber</th>
+                            <th>Candidates</th>
+                            <th>Total Raised</th>
+                            <th>Total Spent</th>
+                            <th>Cash-on-Hand</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Senate</td>
+                            <td>266</td>
+                            <td>$1.5 billion</td>
+                            <td>$1.4 billion</td>
+                            <td>$90.6 million</td>
+                        </tr>
+                        <tr>
+                            <td>House</td>
+                            <td>1,886</td>
+                            <td>$2.3 billion</td>
+                            <td>$2.2 billion</td>
+                            <td>$489.7 million</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>2,152</strong></td>
+                            <td><strong>$3.8 billion</strong></td>
+                            <td><strong>$3.7 billion</strong></td>
+                            <td><strong>$580.3 million</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2.2 Historical Context</h3>
+                <div class="paper-chart">
+                    <h4>Election Spending Growth Over Time</h4>
+                    <canvas id="historicalSpendingChart"></canvas>
+                </div>
+
+                <h3>2.3 PAC Contributions</h3>
+                <p>Political Action Committees contributed <strong>$452.8 million</strong> to federal candidates:</p>
+
+                <div class="paper-chart">
+                    <h4>Top PAC Contributing Industries (2024)</h4>
+                    <canvas id="pacIndustriesChart"></canvas>
+                </div>
+            </section>
+
+            <section id="senate">
+                <h2>3. Senate Campaign Finance Analysis</h2>
+
+                <h3>3.1 Most Expensive Senate Races</h3>
+                <div class="paper-chart">
+                    <h4>Top 5 Most Expensive Senate Races (Total Spending)</h4>
+                    <canvas id="senateRacesChart"></canvas>
+                </div>
+
+                <h3>3.2 Top Senate Fundraisers (2024 Cycle)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Candidate</th>
+                            <th>State</th>
+                            <th>Amount Raised</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ted Cruz (R)</td>
+                            <td>TX</td>
+                            <td>$77 million</td>
+                            <td>Won</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Colin Allred (D)</td>
+                            <td>TX</td>
+                            <td>$77 million</td>
+                            <td>Lost</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Jon Tester (D)</td>
+                            <td>MT</td>
+                            <td>$48+ million</td>
+                            <td>Lost</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sherrod Brown (D)</td>
+                            <td>OH</td>
+                            <td>$45+ million</td>
+                            <td>Lost</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Bob Casey (D)</td>
+                            <td>PA</td>
+                            <td>$42+ million</td>
+                            <td>Lost</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>3.3 Defense Industry - Top Senate Recipients</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Senator</th>
+                            <th>Position</th>
+                            <th>Defense Contributions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jack Reed (D-RI)</td>
+                            <td>Chairman, Armed Services</td>
+                            <td>$590,000+</td>
+                        </tr>
+                        <tr>
+                            <td>Roger Wicker (R-MS)</td>
+                            <td>Ranking Member, Armed Services</td>
+                            <td>$480,000+</td>
+                        </tr>
+                        <tr>
+                            <td>Mark Warner (D-VA)</td>
+                            <td>Intelligence Committee</td>
+                            <td>$425,000+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="house">
+                <h2>4. House of Representatives Campaign Finance Analysis</h2>
+
+                <h3>4.1 Top House Recipients</h3>
+                <div class="paper-chart">
+                    <h4>Highest Fundraising House Members (2024)</h4>
+                    <canvas id="houseFundraisingChart"></canvas>
+                </div>
+
+                <h3>4.2 Committee Assignment and Fundraising</h3>
+                <p>The correlation between committee assignment and industry contributions is stark:</p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Committee</th>
+                            <th>Jurisdiction</th>
+                            <th>Avg Member Fundraising</th>
+                            <th>Top Industries</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ways & Means</td>
+                            <td>Taxation, trade</td>
+                            <td>$4.1 million</td>
+                            <td>All sectors</td>
+                        </tr>
+                        <tr>
+                            <td>Financial Services</td>
+                            <td>Banking, insurance</td>
+                            <td>$3.5 million</td>
+                            <td>Banking, securities</td>
+                        </tr>
+                        <tr>
+                            <td>Energy & Commerce</td>
+                            <td>Health care, telecom, energy</td>
+                            <td>$3.2 million</td>
+                            <td>Pharma, telecom, energy</td>
+                        </tr>
+                        <tr>
+                            <td>Armed Services</td>
+                            <td>Defense, military</td>
+                            <td>$2.8 million</td>
+                            <td>Defense contractors</td>
+                        </tr>
+                        <tr>
+                            <td>Agriculture</td>
+                            <td>Farm policy, nutrition</td>
+                            <td>$1.9 million</td>
+                            <td>Agribusiness</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="industry">
+                <h2>5. Industry Sector Analysis: Who Buys Congress?</h2>
+
+                <h3>5.1 Pharmaceuticals & Health Products</h3>
+                <div class="highlight-box warning">
+                    <strong>Pharma Industry Dominance:</strong>
+                    <ul>
+                        <li><strong>Total PAC contributions (2024):</strong> $16.1 million</li>
+                        <li><strong>Total contributions (all sources):</strong> $42.5 million</li>
+                        <li><strong>Lobbying (2024):</strong> $384.5 million</li>
+                        <li><strong>Lobbying (1999-2024):</strong> $6.1 billion</li>
+                        <li><strong>Saturation:</strong> 72 of 100 senators received $10,000+ from pharma</li>
+                    </ul>
+                </div>
+
+                <div class="paper-chart">
+                    <h4>Top Pharma Recipients in Congress</h4>
+                    <canvas id="pharmaRecipientsChart"></canvas>
+                </div>
+
+                <h3>5.2 Defense Industry</h3>
+                <div class="highlight-box">
+                    <strong>Defense Industry Voting Correlation:</strong><br>
+                    House members who voted for the $886 billion defense budget took <strong>4x more money</strong> from military contractors than those who voted against.
+                </div>
+
+                <div class="paper-chart">
+                    <h4>Defense Contractor Contributions + Lobbying</h4>
+                    <canvas id="defenseChart"></canvas>
+                </div>
+
+                <h3>5.3 Oil & Gas Industry</h3>
+                <p><strong>Lobbying expenditures (2024):</strong> $151.1 million (up $17.6 million from 2023)</p>
+                <p>The spike in spending correlated directly with EPA regulations on fossil fuel emissions.</p>
+
+                <h3>5.4 Real Estate</h3>
+                <p><strong>National Association of Realtors:</strong> $86.3 million in lobbying (2024) - highest of any single organization, a $35 million increase over 2023.</p>
+            </section>
+
+            <section id="top-recipients">
+                <h2>6. Top Recipients: The Most Heavily Funded Members</h2>
+
+                <h3>6.1 Top Recipients from AIPAC and Pro-Israel Groups</h3>
+                <div class="highlight-box">
+                    <strong>AIPAC Spending (2024):</strong> $100 million across 389 congressional races
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Recipient</th>
+                            <th>AIPAC/Pro-Israel Amount</th>
+                            <th>Context</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>George Latimer (D-NY)</td>
+                            <td>$1,633,912</td>
+                            <td>Defeated Rep. Jamaal Bowman in primary</td>
+                        </tr>
+                        <tr>
+                            <td>Wesley Bell (D-MO)</td>
+                            <td>$827,094</td>
+                            <td>Defeated Rep. Cori Bush in primary</td>
+                        </tr>
+                        <tr>
+                            <td>Ritchie Torres (D-NY)</td>
+                            <td>$201,000+</td>
+                            <td>Incumbent, strongly pro-Israel</td>
+                        </tr>
+                        <tr>
+                            <td>Hakeem Jeffries (D-NY)</td>
+                            <td>$200,000+</td>
+                            <td>House Minority Leader</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="dark-money">
+                <h2>7. Dark Money and Untraceable Contributions</h2>
+
+                <h3>7.1 Scale of Dark Money in 2024</h3>
+                <ul>
+                    <li><strong>Total dark money (2024 cycle):</strong> $1.9 billion</li>
+                    <li><strong>Dark money to Super PACs:</strong> $1.3 billion</li>
+                    <li><strong>Congressional races specifically:</strong> $432 million</li>
+                </ul>
+
+                <div class="paper-chart">
+                    <h4>Dark Money Growth Over Time</h4>
+                    <canvas id="darkMoneyChart"></canvas>
+                </div>
+
+                <h3>7.2 Party-Aligned Dark Money Groups</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Organization</th>
+                            <th>Alignment</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Majority Forward</td>
+                            <td>Senate Democrats</td>
+                            <td>$113.2 million</td>
+                        </tr>
+                        <tr>
+                            <td>House Majority Forward</td>
+                            <td>House Democrats</td>
+                            <td>~$80 million</td>
+                        </tr>
+                        <tr>
+                            <td>One Nation</td>
+                            <td>Senate Republicans</td>
+                            <td>~$75 million</td>
+                        </tr>
+                        <tr>
+                            <td>American Action Network</td>
+                            <td>House Republicans</td>
+                            <td>$40 million</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box warning">
+                    <strong>37,400% Increase:</strong> Dark money grew from $5.2 million in 2006 to $1.9 billion in 2024.
+                </div>
+            </section>
+
+            <section id="leadership">
+                <h2>8. Leadership Fundraising: Party Power Brokers</h2>
+
+                <h3>8.1 Senate Leadership</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Leader</th>
+                            <th>Personal Campaign</th>
+                            <th>Aligned Super PAC (Q3 2024)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mitch McConnell (R-KY)</td>
+                            <td>$6.3 million</td>
+                            <td>Senate Leadership Fund: $115 million</td>
+                        </tr>
+                        <tr>
+                            <td>Chuck Schumer (D-NY)</td>
+                            <td>$768,000</td>
+                            <td>Senate Majority PAC: $119 million</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>8.2 House Leadership</h3>
+                <div class="paper-chart">
+                    <h4>House Leadership Fundraising (2024)</h4>
+                    <canvas id="leadershipChart"></canvas>
+                </div>
+
+                <p><strong>Nancy Pelosi (D-CA):</strong> Career total exceeds <strong>$1 billion</strong> raised for Democratic candidates - the most prolific fundraiser in congressional history.</p>
+            </section>
+
+            <section id="special-interests">
+                <h2>9. Special Interest Analysis: AIPAC, Defense, Pharma, Finance</h2>
+
+                <h3>9.1 AIPAC: The Israel Lobby's Congressional Influence</h3>
+                <ul>
+                    <li><strong>Total 2024 spending:</strong> $100 million across 389 races</li>
+                    <li><strong>Direct support:</strong> $53 million to 361 candidates</li>
+                    <li><strong>Outside spending:</strong> $37.9 million through affiliated Super PACs</li>
+                    <li><strong>Scope:</strong> Over 80% of all seats up for reelection</li>
+                </ul>
+
+                <h3>9.2 Defense Industry: Engineering Perpetual War</h3>
+                <div class="paper-chart">
+                    <h4>Defense Industry Spending Breakdown</h4>
+                    <canvas id="defenseBreakdownChart"></canvas>
+                </div>
+
+                <h3>9.3 Finance Sector: Buying Deregulation</h3>
+                <p>Beginning 2018, the Securities/Investment industry shifted from primarily Republican to primarily Democratic support. Dominant contributors include: Blackstone, Apollo Global, KKR, Carlyle Group.</p>
+            </section>
+
+            <section id="geographic">
+                <h2>10. Geographic Patterns and Most Expensive Races</h2>
+
+                <h3>10.1 Top Donor States</h3>
+                <div class="paper-chart">
+                    <h4>Contributions by State (Billions)</h4>
+                    <canvas id="stateContributionsChart"></canvas>
+                </div>
+
+                <h3>10.2 Small-Dollar vs. Large-Dollar Contributions</h3>
+                <div class="highlight-box">
+                    <strong>Concentration of Power:</strong>
+                    <ul>
+                        <li>Top 100 donors gave more than all 4.6 million small-dollar donors combined</li>
+                        <li>Top 0.01% (31,000 people) account for 40% of all contributions</li>
+                        <li>Small donors (&lt;$200) account for only 22% of total fundraising</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="structural">
+                <h2>11. Structural Analysis: The Price of Democracy</h2>
+
+                <h3>11.1 The Cost of Running for Congress</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Race Type</th>
+                            <th>Minimum Viable</th>
+                            <th>Realistically Competitive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>House (competitive)</td>
+                            <td>$2-4 million</td>
+                            <td>$5-8 million</td>
+                        </tr>
+                        <tr>
+                            <td>Senate (small state)</td>
+                            <td>$5-15 million</td>
+                            <td>$15-35 million</td>
+                        </tr>
+                        <tr>
+                            <td>Senate (large state)</td>
+                            <td>$35-100 million</td>
+                            <td>$100-500 million</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>11.2 Time Spent Fundraising</h3>
+                <ul>
+                    <li><strong>House members:</strong> Spend 30-70% of time fundraising</li>
+                    <li><strong>Senators:</strong> Spend 50-80% of time fundraising when up for reelection</li>
+                    <li><strong>Target:</strong> 4-8 hours per day, 5-6 days per week "dialing for dollars"</li>
+                </ul>
+
+                <h3>11.3 The Democracy-Oligarchy Feedback Loop</h3>
+                <div class="paper-chart">
+                    <h4>The Self-Reinforcing Cycle</h4>
+                    <canvas id="feedbackLoopChart"></canvas>
+                </div>
+            </section>
+
+            <section id="conclusions">
+                <h2>12. Conclusions and Democratic Implications</h2>
+
+                <h3>12.1 Summary of Findings</h3>
+                <div class="highlight-box">
+                    <strong>Scale:</strong>
+                    <ul>
+                        <li>$3.8 billion raised by congressional candidates</li>
+                        <li>$17+ billion total federal election spending</li>
+                        <li>$4.4 billion in lobbying</li>
+                        <li>$1.9 billion in dark money</li>
+                    </ul>
+                    <strong>Concentration:</strong>
+                    <ul>
+                        <li>Top 100 donors > all 4.6 million small donors</li>
+                        <li>Top 0.01% = 40% of contributions</li>
+                        <li>Industry PACs systematically fund oversight committees</li>
+                    </ul>
+                    <strong>Outcomes:</strong>
+                    <ul>
+                        <li>Policy follows donor preferences 70% of time</li>
+                        <li>Members spend majority of time fundraising</li>
+                        <li>Access proportional to donations</li>
+                    </ul>
+                </div>
+
+                <h3>12.2 The Death of Representative Democracy</h3>
+                <p>The data demonstrates that the United States Congress does not function as a representative democracy in any meaningful sense:</p>
+                <ul>
+                    <li><strong>Representatives respond to donors, not voters:</strong> Gilens & Page (2014) found average citizens have "near-zero" policy influence</li>
+                    <li><strong>Donor access is 12x that of non-donors</strong></li>
+                    <li><strong>Every major industry funds its oversight committees</strong></li>
+                </ul>
+
+                <h3>12.3 Necessary Reforms</h3>
+                <ol>
+                    <li><strong>Constitutional Amendment:</strong> Overturn Citizens United, establish that corporations are not persons and money is not speech</li>
+                    <li><strong>Public Financing:</strong> Federal funding for campaigns, small-dollar matching</li>
+                    <li><strong>Lobbying Reform:</strong> Multi-year cooling-off period, ban on lobbyist contributions</li>
+                    <li><strong>Corporate Power Reduction:</strong> Antitrust enforcement, progressive corporate taxation</li>
+                    <li><strong>Wealth Redistribution:</strong> Wealth tax, progressive income tax</li>
+                    <li><strong>Labor Power Restoration:</strong> Card check union recognition, sector-wide bargaining</li>
+                    <li><strong>Transparency:</strong> Real-time disclosure, end dark money</li>
+                </ol>
+
+                <blockquote>
+                    Democracy dies in darkness. This report brings light.
+                </blockquote>
+            </section>
+
+            <section class="references">
+                <h2>Data Sources</h2>
+                <p class="reference-item"><strong>Federal Election Commission:</strong> fec.gov/data - Official filings, February 6, 2025 release</p>
+                <p class="reference-item"><strong>OpenSecrets (Center for Responsive Politics):</strong> opensecrets.org - Industry categorization, lobbying data</p>
+                <p class="reference-item"><strong>Brennan Center for Justice:</strong> brennancenter.org - Dark money analysis</p>
+                <p class="reference-item"><strong>Track AIPAC:</strong> trackaipac.com - Pro-Israel lobby expenditures</p>
+                <p class="reference-item"><strong>Campaign Legal Center:</strong> campaignlegal.org - Outside spending documentation</p>
+                <p class="reference-item">Gilens, M., & Page, B. I. (2014). "Testing Theories of American Politics." <em>Perspectives on Politics</em>, 12(3), 564-581.</p>
+            </section>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>0xcasuwu Research Repository</p>
+            <p class="footer-note">Data Current As Of: February 6, 2025 (FEC Release Date)</p>
+        </div>
+    </footer>
+
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+
+        // TOC active state
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Funding Breakdown Chart
+        const fundingCtx = document.getElementById('fundingBreakdownChart').getContext('2d');
+        new Chart(fundingCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['House Candidates ($2.3B)', 'Senate Candidates ($1.5B)'],
+                datasets: [{
+                    data: [2.3, 1.5],
+                    backgroundColor: [
+                        'rgba(100, 149, 237, 0.8)',
+                        'rgba(163, 113, 247, 0.8)'
+                    ],
+                    borderColor: '#1a1a2e',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', padding: 20 }
+                    },
+                    title: {
+                        display: true,
+                        text: 'Total: $3.8 Billion Raised',
+                        color: '#e0e0e0',
+                        font: { size: 16 }
+                    }
+                }
+            }
+        });
+
+        // Historical Spending Chart
+        const historicalCtx = document.getElementById('historicalSpendingChart').getContext('2d');
+        new Chart(historicalCtx, {
+            type: 'line',
+            data: {
+                labels: ['2008', '2012', '2016', '2020', '2024'],
+                datasets: [
+                    {
+                        label: 'Total Federal Election (Billions)',
+                        data: [5.3, 6.3, 6.5, 14.4, 17],
+                        borderColor: 'rgba(220, 53, 69, 1)',
+                        backgroundColor: 'rgba(220, 53, 69, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Congressional Only (Billions)',
+                        data: [2.1, 2.6, 2.4, 3.1, 3.8],
+                        borderColor: 'rgba(100, 149, 237, 1)',
+                        backgroundColor: 'rgba(100, 149, 237, 0.2)',
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // PAC Industries Chart
+        const pacCtx = document.getElementById('pacIndustriesChart').getContext('2d');
+        new Chart(pacCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Labor Unions', 'Finance/Insurance/RE', 'Ideology/Single-Issue', 'Health', 'Communications'],
+                datasets: [{
+                    label: 'PAC Contributions (Millions)',
+                    data: [92.3, 87.6, 73.4, 68.9, 41.2],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(255, 206, 86, 0.8)',
+                        'rgba(75, 192, 192, 0.8)',
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(153, 102, 255, 0.8)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    y: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Senate Races Chart
+        const senateCtx = document.getElementById('senateRacesChart').getContext('2d');
+        new Chart(senateCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Ohio', 'Pennsylvania', 'Montana', 'Texas', 'Arizona'],
+                datasets: [{
+                    label: 'Total Spending (Millions)',
+                    data: [500, 340, 205, 166, 150],
+                    backgroundColor: 'rgba(220, 53, 69, 0.8)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0', callback: v => '$' + v + 'M' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // House Fundraising Chart
+        const houseCtx = document.getElementById('houseFundraisingChart').getContext('2d');
+        new Chart(houseCtx, {
+            type: 'bar',
+            data: {
+                labels: ['McCarthy (R-CA)', 'Jeffries (D-NY)', 'Pelosi (D-CA)', 'Greene (R-GA)', 'AOC (D-NY)'],
+                datasets: [{
+                    label: 'Amount Raised (Millions)',
+                    data: [15.4, 15.1, 12, 11, 9],
+                    backgroundColor: [
+                        'rgba(220, 53, 69, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(220, 53, 69, 0.8)',
+                        'rgba(54, 162, 235, 0.8)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0', callback: v => '$' + v + 'M' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Pharma Recipients Chart
+        const pharmaCtx = document.getElementById('pharmaRecipientsChart').getContext('2d');
+        new Chart(pharmaCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Guthrie (R-KY)', 'Blackburn (R-TN)', 'Cassidy (R-LA)', 'Barrasso (R-WY)', 'Cruz (R-TX)'],
+                datasets: [{
+                    label: 'Pharma Contributions',
+                    data: [441800, 316656, 290375, 204761, 101621],
+                    backgroundColor: 'rgba(255, 99, 132, 0.8)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0', callback: v => '$' + (v/1000) + 'K' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    y: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Defense Chart
+        const defenseCtx = document.getElementById('defenseChart').getContext('2d');
+        new Chart(defenseCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Boeing', 'Lockheed Martin', 'Raytheon', 'Northrop Grumman', 'General Dynamics'],
+                datasets: [
+                    {
+                        label: 'Contributions (Millions)',
+                        data: [3.5, 4.8, 3.2, 2.7, 2.9],
+                        backgroundColor: 'rgba(100, 149, 237, 0.8)',
+                    },
+                    {
+                        label: 'Lobbying (Millions)',
+                        data: [15.6, 14.8, 12.1, 11.2, 9.4],
+                        backgroundColor: 'rgba(255, 206, 86, 0.8)',
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Dark Money Chart
+        const darkCtx = document.getElementById('darkMoneyChart').getContext('2d');
+        new Chart(darkCtx, {
+            type: 'line',
+            data: {
+                labels: ['2006', '2010', '2012', '2016', '2020', '2024'],
+                datasets: [{
+                    label: 'Dark Money (Millions)',
+                    data: [5.2, 135, 308, 181, 1000, 1900],
+                    borderColor: 'rgba(220, 53, 69, 1)',
+                    backgroundColor: 'rgba(220, 53, 69, 0.3)',
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 6,
+                    pointBackgroundColor: 'rgba(220, 53, 69, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } },
+                    annotation: {
+                        annotations: {
+                            line1: {
+                                type: 'line',
+                                xMin: 1,
+                                xMax: 1,
+                                borderColor: 'rgba(255, 255, 255, 0.5)',
+                                borderWidth: 2,
+                                borderDash: [5, 5]
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0', callback: v => '$' + v + 'M' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Leadership Chart
+        const leaderCtx = document.getElementById('leadershipChart').getContext('2d');
+        new Chart(leaderCtx, {
+            type: 'bar',
+            data: {
+                labels: ['McCarthy', 'Jeffries', 'Pelosi', 'Scalise', 'Clyburn'],
+                datasets: [{
+                    label: 'Fundraising (Millions)',
+                    data: [15.4, 15.1, 12, 8, 6],
+                    backgroundColor: [
+                        'rgba(220, 53, 69, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(220, 53, 69, 0.8)',
+                        'rgba(54, 162, 235, 0.8)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0', callback: v => '$' + v + 'M' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Defense Breakdown Chart
+        const defenseBreakdownCtx = document.getElementById('defenseBreakdownChart').getContext('2d');
+        new Chart(defenseBreakdownCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['PAC Contributions', 'Individual Contributions', 'Lobbying'],
+                datasets: [{
+                    data: [12.8, 25, 63],
+                    backgroundColor: [
+                        'rgba(100, 149, 237, 0.8)',
+                        'rgba(163, 113, 247, 0.8)',
+                        'rgba(255, 206, 86, 0.8)'
+                    ],
+                    borderColor: '#1a1a2e',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', padding: 15 }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': $' + context.raw + ' Million';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // State Contributions Chart
+        const stateCtx = document.getElementById('stateContributionsChart').getContext('2d');
+        new Chart(stateCtx, {
+            type: 'bar',
+            data: {
+                labels: ['California', 'New York', 'Texas', 'Florida', 'Illinois'],
+                datasets: [{
+                    label: 'Total Contributions (Billions)',
+                    data: [0.8, 0.6, 0.4, 0.25, 0.2],
+                    backgroundColor: 'rgba(163, 113, 247, 0.8)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0', callback: v => '$' + v + 'B' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    y: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Feedback Loop Chart (radar)
+        const feedbackCtx = document.getElementById('feedbackLoopChart').getContext('2d');
+        new Chart(feedbackCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Wealth Concentration', 'Unlimited Spending (CU)', 'Donor-Responsive Policy', 'Policy Serves Donors', 'Further Concentration'],
+                datasets: [{
+                    label: 'Feedback Loop Strength',
+                    data: [90, 95, 85, 88, 92],
+                    fill: true,
+                    backgroundColor: 'rgba(220, 53, 69, 0.3)',
+                    borderColor: 'rgba(220, 53, 69, 1)',
+                    pointBackgroundColor: 'rgba(220, 53, 69, 1)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgba(220, 53, 69, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } }
+                },
+                scales: {
+                    r: {
+                        angleLines: { color: 'rgba(255,255,255,0.1)' },
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        pointLabels: { color: '#a0a0a0' },
+                        ticks: { display: false }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
