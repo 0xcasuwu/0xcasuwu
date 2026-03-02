@@ -13,8 +13,31 @@
             <a href="index.html" class="logo">0xcasuwu</a>
             <div class="nav-links">
                 <a href="index.html" class="active">Home</a>
-                <a href="papers/imperialism.html">US Imperialism</a>
-                <a href="papers/campaign-finance.html">Campaign Finance</a>
+                <div class="nav-dropdown">
+                    <a href="#bitcoin-section">Bitcoin</a>
+                    <div class="dropdown-content">
+                        <a href="papers/bitcoin-review.html">Comprehensive Review</a>
+                        <a href="papers/qubitcoin.html">Qubitcoin Analysis</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#neuroscience-section">Neuroscience</a>
+                    <div class="dropdown-content">
+                        <a href="papers/nootropics.html">Nootropics Review</a>
+                        <a href="papers/psychedelics-cognitive.html">Psychedelics & Cognition</a>
+                        <a href="papers/psychedelics-mental-health.html">Psychedelics Meta-Analysis</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="#politics-section">Politics</a>
+                    <div class="dropdown-content">
+                        <a href="papers/imperialism.html">US Imperialism</a>
+                        <a href="papers/campaign-finance.html">Campaign Finance</a>
+                        <a href="papers/capitalism-socialism.html">Capitalism/Socialism</a>
+                    </div>
+                </div>
+                <a href="papers/ai-datacenter.html">Technology</a>
+                <a href="papers/freemasonry.html">Free-Masonry</a>
             </div>
         </div>
     </nav>
@@ -22,145 +45,412 @@
     <header class="hero">
         <div class="hero-content">
             <h1>Research Repository</h1>
-            <p class="tagline">Documenting Power, Wealth, and Democratic Accountability</p>
+            <p class="tagline">Interdisciplinary Research Across Technology, Science, Politics & Philosophy</p>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">2</span>
+                    <span class="stat-number">9</span>
                     <span class="stat-label">Research Papers</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">40k+</span>
-                    <span class="stat-label">Words</span>
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Research Areas</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">126</span>
-                    <span class="stat-label">Years Analyzed</span>
+                    <span class="stat-number">100k+</span>
+                    <span class="stat-label">Words</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="papers-grid">
-        <section class="paper-card" onclick="window.location.href='papers/imperialism.html'">
-            <div class="paper-icon">
+    <!-- Category Navigation -->
+    <section class="category-nav">
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="all">All Papers</button>
+            <button class="category-tab" data-category="bitcoin">Bitcoin</button>
+            <button class="category-tab" data-category="neuroscience">Neuroscience</button>
+            <button class="category-tab" data-category="politics">Politics</button>
+            <button class="category-tab" data-category="technology">Technology</button>
+            <button class="category-tab" data-category="freemasonry">Free-Masonry</button>
+        </div>
+    </section>
+
+    <!-- Bitcoin Section -->
+    <section id="bitcoin-section" class="research-section" data-category="bitcoin">
+        <div class="section-header">
+            <div class="section-icon bitcoin-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"/>
-                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    <path d="M9 8h4a2 2 0 1 1 0 4H9m0-4v8m0-4h4.5a2 2 0 1 1 0 4H9m3-10v2m0 10v2"/>
                 </svg>
             </div>
-            <h2>From Anti-Imperialism to Corporate Empire</h2>
-            <p class="paper-subtitle">The Transformation of American Power and Democratic Discourse, 1900-2024</p>
-            <div class="paper-meta">
-                <span class="meta-item">~21,000 words</span>
-                <span class="meta-item">10 sections</span>
-            </div>
-            <p class="paper-excerpt">
-                Examines the radical transformation of United States imperial ambitions and domestic democratic norms
-                from the turn of the 20th century to the present day. Traces the shift from territorial imperialism
-                to corporate-financial imperialism and the degradation of democratic participation.
-            </p>
-            <div class="paper-topics">
-                <span class="topic">Citizens United</span>
-                <span class="topic">Anti-Imperialist League</span>
-                <span class="topic">Oligarchy</span>
-                <span class="topic">Corporate Power</span>
-            </div>
-            <a href="papers/imperialism.html" class="read-btn">Read Paper</a>
-        </section>
+            <h2>Bitcoin Research</h2>
+            <p class="section-desc">Cryptocurrency technology, economics, and quantum-resistant protocols</p>
+        </div>
+        <div class="papers-grid">
+            <article class="paper-card" onclick="window.location.href='papers/bitcoin-review.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>Bitcoin: A Comprehensive Review</h3>
+                <p class="paper-subtitle">Technology, Economics, and Adoption Analysis</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~12,000 words</span>
+                    <span class="meta-item">8 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Comprehensive analysis of Bitcoin's technological foundations, economic implications,
+                    institutional adoption patterns, and future development trajectory. Covers proof-of-work,
+                    halving cycles, ETF impacts, and regulatory landscape.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Blockchain</span>
+                    <span class="topic">ETF Adoption</span>
+                    <span class="topic">Halving Cycles</span>
+                    <span class="topic">Digital Gold</span>
+                </div>
+                <a href="papers/bitcoin-review.html" class="read-btn">Read Paper</a>
+            </article>
 
-        <section class="paper-card" onclick="window.location.href='papers/campaign-finance.html'">
-            <div class="paper-icon">
+            <article class="paper-card" onclick="window.location.href='papers/qubitcoin.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <circle cx="12" cy="12" r="8" stroke-dasharray="4 4"/>
+                        <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+                    </svg>
+                </div>
+                <h3>Qubitcoin Analysis</h3>
+                <p class="paper-subtitle">Quantum-Resistant Cryptocurrency Protocol</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~8,000 words</span>
+                    <span class="meta-item">6 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Technical analysis of quantum computing threats to cryptocurrency and post-quantum
+                    cryptographic solutions. Evaluates lattice-based cryptography, hash-based signatures,
+                    and quantum-resistant blockchain implementations.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Quantum Computing</span>
+                    <span class="topic">Post-Quantum Crypto</span>
+                    <span class="topic">Lattice-Based</span>
+                    <span class="topic">NIST Standards</span>
+                </div>
+                <a href="papers/qubitcoin.html" class="read-btn">Read Paper</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Neuroscience Section -->
+    <section id="neuroscience-section" class="research-section" data-category="neuroscience">
+        <div class="section-header">
+            <div class="section-icon neuroscience-icon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"/>
+                    <path d="M10 21h4"/>
                 </svg>
             </div>
-            <h2>Follow the Money</h2>
-            <p class="paper-subtitle">A Comprehensive Analysis of Campaign Financing Across the U.S. Congress, 2023-2024</p>
-            <div class="paper-meta">
-                <span class="meta-item">~18,500 words</span>
-                <span class="meta-item">13 sections</span>
-            </div>
-            <p class="paper-excerpt">
-                A data-driven report documenting the flow of money from corporate interests, industries, and wealthy
-                donors to federal candidates. Reveals systematic patterns of regulatory capture and the financial
-                capture of American democracy.
-            </p>
-            <div class="paper-topics">
-                <span class="topic">$3.8B Raised</span>
-                <span class="topic">Dark Money</span>
-                <span class="topic">PAC Contributions</span>
-                <span class="topic">Lobbying</span>
-            </div>
-            <a href="papers/campaign-finance.html" class="read-btn">Read Paper</a>
-        </section>
-    </main>
+            <h2>Neuroscience Research</h2>
+            <p class="section-desc">Cognitive enhancement, psychedelic therapeutics, and neuroplasticity</p>
+        </div>
+        <div class="papers-grid">
+            <article class="paper-card" onclick="window.location.href='papers/nootropics.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </div>
+                <h3>Nootropics & Cognitive Enhancement</h3>
+                <p class="paper-subtitle">Systematic Review of Smart Drugs and Supplements</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~15,000 words</span>
+                    <span class="meta-item">9 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Comprehensive review of nootropic compounds including racetams, modafinil, natural
+                    supplements, and novel cognitive enhancers. Analyzes mechanisms of action, clinical
+                    evidence, safety profiles, and real-world efficacy data.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Racetams</span>
+                    <span class="topic">Modafinil</span>
+                    <span class="topic">Neuroplasticity</span>
+                    <span class="topic">Cognition</span>
+                </div>
+                <a href="papers/nootropics.html" class="read-btn">Read Paper</a>
+            </article>
 
+            <article class="paper-card" onclick="window.location.href='papers/psychedelics-cognitive.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <h3>Psychedelics & Cognitive Enhancement</h3>
+                <p class="paper-subtitle">Neuroplasticity, Creativity, and Therapeutic Potential</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~11,000 words</span>
+                    <span class="meta-item">7 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Explores the cognitive enhancement potential of classical psychedelics including
+                    psilocybin, LSD, and DMT. Examines neuroplasticity mechanisms, default mode network
+                    effects, creativity research, and microdosing protocols.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Psilocybin</span>
+                    <span class="topic">LSD</span>
+                    <span class="topic">DMN</span>
+                    <span class="topic">Microdosing</span>
+                </div>
+                <a href="papers/psychedelics-cognitive.html" class="read-btn">Read Paper</a>
+            </article>
+
+            <article class="paper-card" onclick="window.location.href='papers/psychedelics-mental-health.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 3v18h18"/>
+                        <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                    </svg>
+                </div>
+                <h3>Psychedelics & Mental Health</h3>
+                <p class="paper-subtitle">Meta-Analysis of Therapeutic Efficacy</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~18,000 words</span>
+                    <span class="meta-item">11 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Rigorous meta-analysis comparing psychedelic-assisted therapy to conventional treatments
+                    for depression, PTSD, anxiety, and addiction. Analyzes effect sizes, clinical trial data,
+                    and therapeutic protocols across 50+ studies.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Depression</span>
+                    <span class="topic">PTSD</span>
+                    <span class="topic">Effect Sizes</span>
+                    <span class="topic">Clinical Trials</span>
+                </div>
+                <a href="papers/psychedelics-mental-health.html" class="read-btn">Read Paper</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Politics Section -->
+    <section id="politics-section" class="research-section" data-category="politics">
+        <div class="section-header">
+            <div class="section-icon politics-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18M4 21V10l8-6 8 6v11M9 21v-6h6v6"/>
+                </svg>
+            </div>
+            <h2>Political Research</h2>
+            <p class="section-desc">Power structures, economic systems, and democratic accountability</p>
+        </div>
+        <div class="papers-grid">
+            <article class="paper-card" onclick="window.location.href='papers/imperialism.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                </div>
+                <h3>From Anti-Imperialism to Corporate Empire</h3>
+                <p class="paper-subtitle">The Transformation of American Power, 1900-2024</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~21,000 words</span>
+                    <span class="meta-item">10 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Examines the transformation of United States imperial ambitions from territorial
+                    imperialism to corporate-financial imperialism. Traces the degradation of democratic
+                    participation and rise of oligarchic control.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Citizens United</span>
+                    <span class="topic">Anti-Imperialist League</span>
+                    <span class="topic">Oligarchy</span>
+                    <span class="topic">Corporate Power</span>
+                </div>
+                <a href="papers/imperialism.html" class="read-btn">Read Paper</a>
+            </article>
+
+            <article class="paper-card" onclick="window.location.href='papers/campaign-finance.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                <h3>Follow the Money</h3>
+                <p class="paper-subtitle">Campaign Financing Analysis, 2023-2024</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~18,500 words</span>
+                    <span class="meta-item">13 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Data-driven analysis documenting the flow of money from corporate interests, industries,
+                    and wealthy donors to federal candidates. Reveals systematic patterns of regulatory
+                    capture and the financial capture of American democracy.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">$3.8B Raised</span>
+                    <span class="topic">Dark Money</span>
+                    <span class="topic">PAC Contributions</span>
+                    <span class="topic">Lobbying</span>
+                </div>
+                <a href="papers/campaign-finance.html" class="read-btn">Read Paper</a>
+            </article>
+
+            <article class="paper-card" onclick="window.location.href='papers/capitalism-socialism.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 3v18M16 3v18M3 8h18M3 16h18"/>
+                    </svg>
+                </div>
+                <h3>Misattribution of Economic Critiques</h3>
+                <p class="paper-subtitle">Capitalism vs Socialism Meta-Analysis</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~25,000 words</span>
+                    <span class="meta-item">12 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Meta-analysis examining how criticisms attributed to socialism frequently describe
+                    features of existing capitalism. Analyzes definitional confusion, historical case
+                    studies, and systematic attribution errors across political discourse.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Economic Systems</span>
+                    <span class="topic">Attribution Errors</span>
+                    <span class="topic">Definitional Analysis</span>
+                    <span class="topic">Historical Cases</span>
+                </div>
+                <a href="papers/capitalism-socialism.html" class="read-btn">Read Paper</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology-section" class="research-section" data-category="technology">
+        <div class="section-header">
+            <div class="section-icon technology-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                    <path d="M8 21h8M12 17v4"/>
+                </svg>
+            </div>
+            <h2>Technology Research</h2>
+            <p class="section-desc">Environmental impact, AI infrastructure, and technological sustainability</p>
+        </div>
+        <div class="papers-grid">
+            <article class="paper-card" onclick="window.location.href='papers/ai-datacenter.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <path d="M7.5 4.21l4.5 2.6 4.5-2.6M7.5 19.79V14.6L3 12M21 12l-4.5 2.6v5.19M12 12l4.5 2.6M12 12v6.5M12 12L7.5 9.4"/>
+                    </svg>
+                </div>
+                <h3>AI Datacenter Environmental Impact</h3>
+                <p class="paper-subtitle">Energy, Water, and Carbon Analysis</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~10,000 words</span>
+                    <span class="meta-item">8 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Comprehensive analysis of AI infrastructure's environmental footprint. Examines energy
+                    consumption (460 TWh), water usage (66B liters), carbon emissions, and sustainability
+                    challenges as AI model sizes continue scaling exponentially.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">460 TWh Energy</span>
+                    <span class="topic">66B L Water</span>
+                    <span class="topic">Carbon Emissions</span>
+                    <span class="topic">Sustainability</span>
+                </div>
+                <a href="papers/ai-datacenter.html" class="read-btn">Read Paper</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Free-Masonry Section -->
+    <section id="freemasonry-section" class="research-section" data-category="freemasonry">
+        <div class="section-header">
+            <div class="section-icon freemasonry-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/>
+                    <path d="M12 22v-6.5M22 8.5l-10 5.5-10-5.5"/>
+                    <path d="M2 15.5l10-5.5 10 5.5"/>
+                </svg>
+            </div>
+            <h2>Free-Masonry Research</h2>
+            <p class="section-desc">Historical analysis, philosophical traditions, and symbolic interpretation</p>
+        </div>
+        <div class="papers-grid">
+            <article class="paper-card" onclick="window.location.href='papers/freemasonry.html'">
+                <div class="paper-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                </div>
+                <h3>Morals and Dogma Analysis</h3>
+                <p class="paper-subtitle">Pike's Esoteric Philosophy Examined</p>
+                <div class="paper-meta">
+                    <span class="meta-item">~14,000 words</span>
+                    <span class="meta-item">9 sections</span>
+                </div>
+                <p class="paper-excerpt">
+                    Critical analysis of Albert Pike's "Morals and Dogma of the Ancient and Accepted
+                    Scottish Rite of Freemasonry." Examines philosophical foundations, symbolic systems,
+                    historical context, and influence on Western esoteric tradition.
+                </p>
+                <div class="paper-topics">
+                    <span class="topic">Albert Pike</span>
+                    <span class="topic">Scottish Rite</span>
+                    <span class="topic">Symbolism</span>
+                    <span class="topic">Esotericism</span>
+                </div>
+                <a href="papers/freemasonry.html" class="read-btn">Read Paper</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Key Findings -->
     <section class="key-findings">
         <h2>Key Findings Across Research</h2>
         <div class="findings-grid">
             <div class="finding">
+                <div class="finding-number">460 TWh</div>
+                <div class="finding-label">AI Energy Consumption (2024)</div>
+            </div>
+            <div class="finding">
                 <div class="finding-number">$17B+</div>
-                <div class="finding-label">Total 2024 Election Spending</div>
+                <div class="finding-label">2024 US Election Spending</div>
+            </div>
+            <div class="finding">
+                <div class="finding-number">71%</div>
+                <div class="finding-label">Psilocybin Response Rate</div>
             </div>
             <div class="finding">
                 <div class="finding-number">750</div>
                 <div class="finding-label">US Military Bases Worldwide</div>
             </div>
-            <div class="finding">
-                <div class="finding-number">70%</div>
-                <div class="finding-label">Policy Follows Donor Preferences</div>
-            </div>
-            <div class="finding">
-                <div class="finding-number">$6.1B</div>
-                <div class="finding-label">Pharma Lobbying (1999-2024)</div>
-            </div>
         </div>
     </section>
 
+    <!-- Visualization Preview -->
     <section class="visualization-preview">
         <h2>Data Visualizations</h2>
         <div class="charts-container">
             <div class="chart-box">
-                <h3>Election Spending Growth</h3>
-                <canvas id="spendingChart"></canvas>
+                <h3>Research Areas Distribution</h3>
+                <canvas id="researchChart"></canvas>
             </div>
             <div class="chart-box">
-                <h3>Top Industry PAC Contributions (2024)</h3>
-                <canvas id="industryChart"></canvas>
-            </div>
-        </div>
-    </section>
-
-    <section class="timeline-preview">
-        <h2>Historical Timeline</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-year">1898</div>
-                <div class="timeline-content">
-                    <h4>Anti-Imperialist League Founded</h4>
-                    <p>Opposition to Philippine-American War establishes anti-imperial tradition</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-year">1976</div>
-                <div class="timeline-content">
-                    <h4>Buckley v. Valeo</h4>
-                    <p>Supreme Court rules campaign spending is protected speech</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2010</div>
-                <div class="timeline-content">
-                    <h4>Citizens United v. FEC</h4>
-                    <p>Unlimited corporate political spending becomes constitutional right</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-year">2024</div>
-                <div class="timeline-content">
-                    <h4>$17 Billion Election</h4>
-                    <p>Most expensive election in American history</p>
-                </div>
+                <h3>AI Energy Growth Projection</h3>
+                <canvas id="energyChart"></canvas>
             </div>
         </div>
     </section>
@@ -169,34 +459,83 @@
         <div class="footer-content">
             <p>0xcasuwu Research Repository</p>
             <p class="footer-note">Released under Creative Commons Attribution-NonCommercial-ShareAlike 4.0</p>
+            <p class="footer-links">
+                <a href="https://github.com/0xcasuwu/research">GitHub Repository</a>
+            </p>
         </div>
     </footer>
 
     <script>
-        // Election Spending Chart
-        const spendingCtx = document.getElementById('spendingChart').getContext('2d');
-        new Chart(spendingCtx, {
-            type: 'bar',
+        // Category filtering
+        const tabs = document.querySelectorAll('.category-tab');
+        const sections = document.querySelectorAll('.research-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const category = tab.dataset.category;
+                sections.forEach(section => {
+                    if (category === 'all' || section.dataset.category === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Research Areas Chart
+        const researchCtx = document.getElementById('researchChart').getContext('2d');
+        new Chart(researchCtx, {
+            type: 'doughnut',
             data: {
-                labels: ['2008', '2012', '2016', '2020', '2024'],
+                labels: ['Politics', 'Neuroscience', 'Bitcoin', 'Technology', 'Free-Masonry'],
                 datasets: [{
-                    label: 'Total Federal Election Spending (Billions)',
-                    data: [5.3, 6.3, 6.5, 14.4, 17],
+                    data: [3, 3, 2, 1, 1],
                     backgroundColor: [
-                        'rgba(100, 149, 237, 0.8)',
-                        'rgba(100, 149, 237, 0.8)',
-                        'rgba(100, 149, 237, 0.8)',
-                        'rgba(100, 149, 237, 0.8)',
-                        'rgba(220, 53, 69, 0.9)'
+                        'rgba(220, 53, 69, 0.8)',
+                        'rgba(75, 192, 192, 0.8)',
+                        'rgba(255, 193, 7, 0.8)',
+                        'rgba(54, 162, 235, 0.8)',
+                        'rgba(153, 102, 255, 0.8)'
                     ],
-                    borderColor: [
-                        'rgba(100, 149, 237, 1)',
-                        'rgba(100, 149, 237, 1)',
-                        'rgba(100, 149, 237, 1)',
-                        'rgba(100, 149, 237, 1)',
-                        'rgba(220, 53, 69, 1)'
-                    ],
-                    borderWidth: 2
+                    borderColor: '#1a1a2e',
+                    borderWidth: 3
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', padding: 15, font: { size: 12 } }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': ' + context.raw + ' papers';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // AI Energy Growth Chart
+        const energyCtx = document.getElementById('energyChart').getContext('2d');
+        new Chart(energyCtx, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2022', '2024', '2026', '2028', '2030'],
+                datasets: [{
+                    label: 'AI Datacenter Energy (TWh)',
+                    data: [100, 180, 460, 800, 1200, 1800],
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0.4
                 }]
             },
             options: {
@@ -215,43 +554,6 @@
                     x: {
                         ticks: { color: '#a0a0a0' },
                         grid: { color: 'rgba(255,255,255,0.1)' }
-                    }
-                }
-            }
-        });
-
-        // Industry PAC Chart
-        const industryCtx = document.getElementById('industryChart').getContext('2d');
-        new Chart(industryCtx, {
-            type: 'doughnut',
-            data: {
-                labels: ['Labor Unions', 'Finance/Insurance/RE', 'Ideology/Single-Issue', 'Health', 'Communications/Tech'],
-                datasets: [{
-                    data: [92.3, 87.6, 73.4, 68.9, 41.2],
-                    backgroundColor: [
-                        'rgba(54, 162, 235, 0.8)',
-                        'rgba(255, 206, 86, 0.8)',
-                        'rgba(75, 192, 192, 0.8)',
-                        'rgba(255, 99, 132, 0.8)',
-                        'rgba(153, 102, 255, 0.8)'
-                    ],
-                    borderColor: '#1a1a2e',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                        labels: { color: '#e0e0e0', padding: 15 }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return context.label + ': $' + context.raw + 'M';
-                            }
-                        }
                     }
                 }
             }

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychedelics & Cognitive Enhancement | 0xcasuwu Research</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">0xcasuwu</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="nootropics.html">Nootropics</a>
+                <a href="#" class="active">Psychedelics & Cognition</a>
+                <a href="psychedelics-mental-health.html">Mental Health</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="paper-header">
+        <h1>Psychedelics & Cognitive Enhancement</h1>
+        <p class="subtitle">Neuroplasticity, Creativity, and Therapeutic Potential</p>
+        <div class="paper-info">
+            <span class="paper-info-item">~11,000 words</span>
+            <span class="paper-info-item">Neuroscience</span>
+            <span class="paper-info-item">2026</span>
+        </div>
+    </header>
+
+    <div class="paper-layout">
+        <aside class="toc">
+            <h3>Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#neuroplasticity">1. Neuroplasticity</a></li>
+                <li><a href="#creativity">2. Creativity</a></li>
+                <li><a href="#microdosing">3. Microdosing</a></li>
+                <li><a href="#dmn">4. Default Mode Network</a></li>
+            </ul>
+        </aside>
+
+        <main class="paper-content">
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>Classic psychedelics (psilocybin, LSD, DMT) have emerged as potential cognitive enhancers through their unique ability to promote neuroplasticity and reorganize brain network connectivity.</p>
+
+                <div class="highlight-box">
+                    <strong>Key Mechanism:</strong> 5-HT2A receptor activation leads to increased dendritic spine density, BDNF release, and enhanced between-network connectivity.
+                </div>
+            </section>
+
+            <section id="neuroplasticity">
+                <h2>1. Neuroplasticity Effects</h2>
+                <p>Psychedelics are classified as "psychoplastogens" - compounds that rapidly promote lasting neuroplasticity after a single dose.</p>
+
+                <div class="paper-chart">
+                    <h4>Neuroplasticity Markers</h4>
+                    <canvas id="plasticityChart"></canvas>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Effect</th>
+                            <th>Magnitude</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dendritic spine density</td>
+                            <td>+10%</td>
+                            <td>24h onset, 1+ month</td>
+                        </tr>
+                        <tr>
+                            <td>BDNF mRNA expression</td>
+                            <td>Elevated</td>
+                            <td>Up to 1 month</td>
+                        </tr>
+                        <tr>
+                            <td>Synaptogenesis</td>
+                            <td>Increased</td>
+                            <td>Rapid onset</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="creativity">
+                <h2>2. Creativity & Problem-Solving</h2>
+                <p>Psychedelics have been associated with enhanced divergent thinking, novel associations, and creative problem-solving.</p>
+
+                <div class="highlight-box success">
+                    <strong>Historical Note:</strong> Nobel laureate Francis Crick reportedly conceived the DNA double helix structure while under the influence of LSD.
+                </div>
+            </section>
+
+            <section id="microdosing">
+                <h2>3. Microdosing Research</h2>
+                <p>Microdosing involves taking sub-perceptual doses (typically 1/10th to 1/20th of a full dose) on a regular schedule.</p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Protocol</th>
+                            <th>Dose</th>
+                            <th>Schedule</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fadiman Protocol</td>
+                            <td>10-20μg LSD / 0.1-0.3g psilocybin</td>
+                            <td>Every 3 days</td>
+                        </tr>
+                        <tr>
+                            <td>Stamets Protocol</td>
+                            <td>0.1-0.3g psilocybin + Lion's Mane</td>
+                            <td>4 days on, 3 off</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box warning">
+                    <strong>Evidence Status:</strong> Controlled trials have produced mixed results, with some studies suggesting placebo effects account for much of the reported benefits.
+                </div>
+            </section>
+
+            <section id="dmn">
+                <h2>4. Default Mode Network</h2>
+                <p>Psychedelics decrease activity and connectivity within the DMN while increasing between-network connectivity - a pattern associated with reduced rumination and increased cognitive flexibility.</p>
+
+                <div class="paper-chart">
+                    <h4>Network Connectivity Changes</h4>
+                    <canvas id="networkChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>0xcasuwu Research Repository</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const progress = (document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        });
+
+        new Chart(document.getElementById('plasticityChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Psilocybin', 'LSD', 'DMT', 'Ketamine'],
+                datasets: [{
+                    label: 'Relative Neuroplasticity Effect',
+                    data: [90, 95, 85, 70],
+                    backgroundColor: 'rgba(75, 192, 192, 0.8)'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, max: 100, ticks: { color: '#a0a0a0' }, grid: { color: 'rgba(255,255,255,0.1)' } },
+                    x: { ticks: { color: '#a0a0a0' }, grid: { color: 'rgba(255,255,255,0.1)' } }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('networkChart').getContext('2d'), {
+            type: 'radar',
+            data: {
+                labels: ['DMN Activity', 'Within-DMN Connectivity', 'Between-Network Connectivity', 'Entropy', 'Flexibility'],
+                datasets: [{
+                    label: 'Baseline',
+                    data: [80, 85, 30, 40, 45],
+                    borderColor: 'rgba(255, 193, 7, 1)',
+                    backgroundColor: 'rgba(255, 193, 7, 0.2)'
+                }, {
+                    label: 'Under Psilocybin',
+                    data: [40, 35, 85, 90, 90],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { labels: { color: '#e0e0e0' } } },
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: { color: '#a0a0a0', backdropColor: 'transparent' },
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        pointLabels: { color: '#e0e0e0' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

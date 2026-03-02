@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin: A Multi-Dimensional Analysis | 0xcasuwu Research</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">0xcasuwu</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="#" class="active">Bitcoin Review</a>
+                <a href="qubitcoin.html">Qubitcoin</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="paper-header">
+        <h1>Bitcoin: A Multi-Dimensional Analysis</h1>
+        <p class="subtitle">Technology, History, Politics, and Power Projection</p>
+        <div class="paper-info">
+            <span class="paper-info-item">~12,000 words</span>
+            <span class="paper-info-item">8 sections</span>
+            <span class="paper-info-item">February 2026</span>
+        </div>
+    </header>
+
+    <div class="paper-layout">
+        <aside class="toc">
+            <h3>Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#historical-origins">2. Cypherpunk Origins</a></li>
+                <li><a href="#technical">3. Technical Foundations</a></li>
+                <li><a href="#block-size-wars">4. Block Size Wars</a></li>
+                <li><a href="#epstein">5. Financial Entanglements</a></li>
+                <li><a href="#softwar">6. National Defense Thesis</a></li>
+                <li><a href="#synthesis">7. Synthesis</a></li>
+                <li><a href="#references">8. References</a></li>
+            </ul>
+        </aside>
+
+        <main class="paper-content">
+            <section id="introduction">
+                <h2>1. Introduction</h2>
+                <p>Bitcoin represents far more than a digital currency. It is simultaneously a cryptographic breakthrough in solving the double-spending problem, a political statement against centralized financial control, a computational arms race consuming terawatts of energy, a controversial financial instrument with dark historical ties, and a potential national security technology for cyber-physical power projection.</p>
+
+                <p>This paper examines Bitcoin through multiple lenses—technical, historical, political, financial, and strategic—to provide a comprehensive understanding of this multifaceted technology. We trace its origins in the cypherpunk movement, examine its technical architecture, analyze the ideological conflicts that shaped its development (the Block Size Wars), investigate troubling financial connections, and explore its reframing as a national defense technology.</p>
+
+                <div class="highlight-box">
+                    <strong>Key Thesis:</strong> Bitcoin is not merely "digital gold" or "peer-to-peer cash"—it is a complex sociotechnical system embedded in history, power, and competing visions of the future.
+                </div>
+            </section>
+
+            <section id="historical-origins">
+                <h2>2. Historical Origins and the Cypherpunk Movement</h2>
+
+                <h3>2.1 The Cypherpunk Roots</h3>
+                <p>Bitcoin did not emerge in a vacuum. Its philosophical and technical DNA can be traced directly to the <strong>cypherpunk movement</strong> of the 1990s—a loose collective of cryptographers, computer scientists, and privacy advocates who believed that strong cryptography could protect individual freedom against surveillance and authoritarian control.</p>
+
+                <blockquote>
+                    "Privacy is necessary for an open society in the electronic age... We cannot expect governments, corporations, or other large, faceless organizations to grant us privacy... We must defend our own privacy if we expect to have any."
+                    <br><em>— Eric Hughes, "A Cypherpunk's Manifesto" (1993)</em>
+                </blockquote>
+
+                <h4>Key Precursor Projects</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th>Creator</th>
+                            <th>Year</th>
+                            <th>Contribution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DigiCash</td>
+                            <td>David Chaum</td>
+                            <td>1989</td>
+                            <td>First digital cash using blind signatures</td>
+                        </tr>
+                        <tr>
+                            <td>Hashcash</td>
+                            <td>Adam Back</td>
+                            <td>1997</td>
+                            <td>Proof-of-work system (cited by Satoshi)</td>
+                        </tr>
+                        <tr>
+                            <td>b-money</td>
+                            <td>Wei Dai</td>
+                            <td>1998</td>
+                            <td>Anonymous distributed electronic cash proposal</td>
+                        </tr>
+                        <tr>
+                            <td>Bit Gold</td>
+                            <td>Nick Szabo</td>
+                            <td>2005</td>
+                            <td>Decentralized digital currency with PoW</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>2.2 The 2008 Financial Crisis Context</h3>
+                <p>Bitcoin's whitepaper was published on <strong>October 31, 2008</strong>, during the height of the global financial crisis. The timing was not coincidental. The crisis exposed moral hazard in "too big to fail" banking, central bank monetary expansion, and the fragility of centralized financial systems.</p>
+
+                <div class="highlight-box success">
+                    <strong>Genesis Block Message:</strong> "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" — A timestamp proving Bitcoin's creation date and an editorial statement about its purpose.
+                </div>
+
+                <h3>2.3 Satoshi Nakamoto: The Anonymous Creator</h3>
+                <p>Satoshi Nakamoto remains the pseudonymous individual or group who authored the Bitcoin whitepaper and implemented the first software. Key facts:</p>
+                <ul>
+                    <li><strong>Active period:</strong> October 2008 to December 2010</li>
+                    <li><strong>Bitcoin holdings:</strong> Estimated ~1 million BTC from early mining, never moved</li>
+                    <li><strong>Disappearance:</strong> Strategic removal to prevent Bitcoin being controlled through a single leader</li>
+                </ul>
+            </section>
+
+            <section id="technical">
+                <h2>3. Technical Foundations</h2>
+
+                <h3>3.1 The Blockchain</h3>
+                <p>A blockchain is an append-only, distributed ledger of transactions. Key properties:</p>
+                <ul>
+                    <li><strong>Blocks:</strong> ~1 MB batches, 10-minute target interval</li>
+                    <li><strong>Chain:</strong> Each block contains a cryptographic hash of the previous block</li>
+                    <li><strong>Distributed:</strong> Every full node maintains a complete copy (~550 GB)</li>
+                    <li><strong>Transparent:</strong> All transactions publicly visible (pseudonymous addresses)</li>
+                </ul>
+
+                <div class="paper-chart">
+                    <h4>Bitcoin Network Statistics</h4>
+                    <canvas id="networkChart"></canvas>
+                </div>
+
+                <h3>3.2 Cryptographic Foundations</h3>
+                <h4>SHA-256 (Secure Hash Algorithm)</h4>
+                <p>Bitcoin uses double SHA-256 for block hashes, mining puzzles, and transaction IDs. Properties: deterministic, collision-resistant, one-way (pre-image resistant).</p>
+
+                <h4>ECDSA (Elliptic Curve Digital Signature Algorithm)</h4>
+                <p>Uses the secp256k1 curve for digital signatures. Private keys (256-bit) generate public keys which generate addresses. Only the holder of the private key can create valid signatures.</p>
+
+                <h3>3.3 Proof of Work and Mining</h3>
+                <p>Bitcoin's consensus mechanism involves miners competing to find a hash below a network-defined target. The current block reward is <strong>3.125 BTC</strong>, halving every 210,000 blocks (~4 years).</p>
+
+                <div class="paper-chart">
+                    <h4>Energy Consumption Comparison</h4>
+                    <canvas id="energyChart"></canvas>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Value (2026)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Annual Energy Consumption</td>
+                            <td>~150 TWh</td>
+                        </tr>
+                        <tr>
+                            <td>Transaction Throughput</td>
+                            <td>3-7 TPS</td>
+                        </tr>
+                        <tr>
+                            <td>51% Attack Cost</td>
+                            <td>$10B+ in hardware</td>
+                        </tr>
+                        <tr>
+                            <td>Full Node Count</td>
+                            <td>~50,000 globally</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="block-size-wars">
+                <h2>4. The Block Size Wars (2015-2017)</h2>
+
+                <p>The Block Size Wars represent Bitcoin's most significant internal conflict—a multi-year debate over scalability that split the community and led to the creation of Bitcoin Cash.</p>
+
+                <h3>4.1 The Two Camps</h3>
+
+                <div class="paper-chart">
+                    <h4>Block Size Debate: Positions</h4>
+                    <canvas id="debateChart"></canvas>
+                </div>
+
+                <h4>Big Blockers</h4>
+                <ul>
+                    <li><strong>Philosophy:</strong> Bitcoin as "peer-to-peer electronic cash"</li>
+                    <li><strong>Proponents:</strong> Gavin Andresen, Roger Ver, Jihan Wu (Bitmain)</li>
+                    <li><strong>Proposals:</strong> Bitcoin XT (8 MB), Bitcoin Classic (2 MB), Bitcoin Unlimited</li>
+                </ul>
+
+                <h4>Small Blockers</h4>
+                <ul>
+                    <li><strong>Philosophy:</strong> Bitcoin as "censorship-resistant digital gold"</li>
+                    <li><strong>Proponents:</strong> Bitcoin Core developers, Blockstream</li>
+                    <li><strong>Proposals:</strong> SegWit, Lightning Network</li>
+                </ul>
+
+                <h3>4.2 Timeline of Events</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Event</th>
+                            <th>Significance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2015</td>
+                            <td>Bitcoin XT Released</td>
+                            <td>8 MB block proposal, nodes DDoSed</td>
+                        </tr>
+                        <tr>
+                            <td>March 2017</td>
+                            <td>UASF Movement</td>
+                            <td>BIP 148 user-activated soft fork</td>
+                        </tr>
+                        <tr>
+                            <td>May 2017</td>
+                            <td>New York Agreement</td>
+                            <td>SegWit2x compromise, Core excluded</td>
+                        </tr>
+                        <tr>
+                            <td>August 1, 2017</td>
+                            <td>Bitcoin Cash Fork</td>
+                            <td>BCH created with 8 MB blocks</td>
+                        </tr>
+                        <tr>
+                            <td>November 2017</td>
+                            <td>SegWit2x Canceled</td>
+                            <td>Small blockers win</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box">
+                    <strong>Outcome (2026):</strong> BTC market cap ~$2 trillion vs BCH ~$10 billion. Small blockers won the brand and network effects.
+                </div>
+            </section>
+
+            <section id="epstein">
+                <h2>5. Financial Entanglements: The Epstein Connection</h2>
+
+                <p>Documents released in 2026 revealed troubling connections between Jeffrey Epstein and the cryptocurrency industry.</p>
+
+                <h3>5.1 Confirmed Investments</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Amount</th>
+                            <th>Year</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coinbase</td>
+                            <td>$3 million</td>
+                            <td>2014</td>
+                            <td>Series C funding round</td>
+                        </tr>
+                        <tr>
+                            <td>Blockstream</td>
+                            <td>~$500,000</td>
+                            <td>2014-15</td>
+                            <td>Co-invested with Joi Ito</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>5.2 MIT Media Lab Funding</h3>
+                <p>Critically, Epstein funded MIT Media Lab, which employed three Bitcoin Core developers (Wladimir van der Laan, Gavin Andresen, Cory Fields) during the Block Size Wars after the Bitcoin Foundation collapsed in 2015.</p>
+
+                <div class="highlight-box warning">
+                    <strong>Important Clarification:</strong> Epstein did NOT create Bitcoin, control Satoshi's wallets, or technically contribute to Bitcoin's code. However, his funding of institutions employing developers during a critical period raises questions about influence operations.
+                </div>
+            </section>
+
+            <section id="softwar">
+                <h2>6. Bitcoin as National Defense: The Softwar Thesis</h2>
+
+                <p>U.S. Space Force Major Jason Paul Lowery argues in his MIT thesis <em>Softwar</em> (2023) that Bitcoin should be understood as a <strong>cyber-physical power projection technology</strong> critical to national security.</p>
+
+                <h3>6.1 Core Argument</h3>
+                <ol>
+                    <li><strong>Physical power historically controlled resources:</strong> Armies, navies, nuclear deterrence</li>
+                    <li><strong>Cyberspace lacks physical grounding:</strong> Abstract defenses (cryptography, access control) have no physical cost</li>
+                    <li><strong>Proof-of-Work adds physical cost:</strong> Energy expenditure creates a physical barrier to cyber attack</li>
+                    <li><strong>Bitcoin demonstrates the principle:</strong> PoW can secure any digital information</li>
+                </ol>
+
+                <div class="paper-chart">
+                    <h4>Power Projection Evolution</h4>
+                    <canvas id="powerChart"></canvas>
+                </div>
+
+                <h3>6.2 Policy Recommendations</h3>
+                <ul>
+                    <li>Recognize Bitcoin as strategic infrastructure (like GPS)</li>
+                    <li>Support domestic Bitcoin mining for hashrate control</li>
+                    <li>Integrate proof-of-work into defense systems</li>
+                    <li>Prevent adversaries from dominating mining</li>
+                </ul>
+
+                <h3>6.3 DoD Review</h3>
+                <p>The Department of Defense retroactively subjected <em>Softwar</em> to a security and policy review. The thesis was ordered removed from circulation. Book copies sold for $300+ on eBay after the review news.</p>
+            </section>
+
+            <section id="synthesis">
+                <h2>7. Synthesis: Bitcoin in Multi-Dimensional Context</h2>
+
+                <h3>7.1 Bitcoin as a Sociotechnical System</h3>
+                <p>Bitcoin is simultaneously:</p>
+                <ul>
+                    <li><strong>Technical:</strong> Cryptographic protocols, proof-of-work, blockchain</li>
+                    <li><strong>Economic:</strong> Store of value, speculative asset, fee market</li>
+                    <li><strong>Political:</strong> Governance debates, decentralization, censorship resistance</li>
+                    <li><strong>Environmental:</strong> Energy consumption, carbon footprint</li>
+                    <li><strong>Strategic:</strong> National security implications, power projection</li>
+                </ul>
+
+                <div class="paper-chart">
+                    <h4>Bitcoin Price History</h4>
+                    <canvas id="priceChart"></canvas>
+                </div>
+
+                <h3>7.2 Future Scenarios</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Scenario</th>
+                            <th>Likelihood</th>
+                            <th>Timeframe</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Digital Gold (current trajectory)</td>
+                            <td>High</td>
+                            <td>Ongoing</td>
+                        </tr>
+                        <tr>
+                            <td>Strategic Reserve (Lowery thesis)</td>
+                            <td>Low-Moderate</td>
+                            <td>5-15 years</td>
+                        </tr>
+                        <tr>
+                            <td>Hyperbitcoinization</td>
+                            <td>Low</td>
+                            <td>Decades</td>
+                        </tr>
+                        <tr>
+                            <td>Regulatory Capture</td>
+                            <td>Moderate</td>
+                            <td>Ongoing</td>
+                        </tr>
+                        <tr>
+                            <td>Coexistence with altcoins</td>
+                            <td>High</td>
+                            <td>Ongoing</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>7.3 Lindy Effect</h3>
+                <p>Bitcoin is now 17 years old. It has survived Mt. Gox collapse, China mining ban, Block Size Wars, regulatory crackdowns, FTX collapse, and thousands of "Ethereum killers." Its persistence suggests it has achieved a form of Lindy effect—the longer it survives, the longer it's likely to survive.</p>
+            </section>
+
+            <section id="references" class="references">
+                <h2>8. References</h2>
+                <div class="reference-item">Nakamoto, S. (2008). <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em>. bitcoin.org/bitcoin.pdf</div>
+                <div class="reference-item">Lowery, J. P. (2023). <em>Softwar: A Novel Theory on Power Projection</em>. MIT thesis.</div>
+                <div class="reference-item">CoinDesk. (2025). "Satoshi's Bitcoin Whitepaper Turns 17"</div>
+                <div class="reference-item">Fortune. (2026). "Epstein's Crypto Ties: Documents Reveal Early Coinbase Investment"</div>
+                <div class="reference-item">Bitfinex Blog. "A Look at Jason Lowery's SoftWar Thesis"</div>
+                <div class="reference-item">Trust Machines. "How the Blocksize Wars Impacted Bitcoin in 2017"</div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>0xcasuwu Research Repository</p>
+            <p class="footer-note">Released under Creative Commons Attribution-NonCommercial-ShareAlike 4.0</p>
+        </div>
+    </footer>
+
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const progress = (scrollTop / scrollHeight) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        });
+
+        // TOC highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Network Stats Chart
+        const networkCtx = document.getElementById('networkChart').getContext('2d');
+        new Chart(networkCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Nodes', 'Hashrate (EH/s)', 'Blockchain (GB)', 'TPS (max)'],
+                datasets: [{
+                    label: 'Bitcoin Network (2026)',
+                    data: [50, 500, 550, 7],
+                    backgroundColor: [
+                        'rgba(247, 147, 26, 0.8)',
+                        'rgba(247, 147, 26, 0.6)',
+                        'rgba(247, 147, 26, 0.8)',
+                        'rgba(247, 147, 26, 0.6)'
+                    ],
+                    borderColor: 'rgba(247, 147, 26, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Energy Chart
+        const energyCtx = document.getElementById('energyChart').getContext('2d');
+        new Chart(energyCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Bitcoin', 'Norway', 'Netherlands', 'Argentina', 'Gold Mining'],
+                datasets: [{
+                    label: 'Annual Energy (TWh)',
+                    data: [150, 124, 116, 130, 240],
+                    backgroundColor: [
+                        'rgba(247, 147, 26, 0.9)',
+                        'rgba(100, 149, 237, 0.7)',
+                        'rgba(100, 149, 237, 0.7)',
+                        'rgba(100, 149, 237, 0.7)',
+                        'rgba(255, 215, 0, 0.7)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Block Size Debate Chart
+        const debateCtx = document.getElementById('debateChart').getContext('2d');
+        new Chart(debateCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Decentralization', 'Transaction Speed', 'Low Fees', 'Security', 'Scalability', 'Node Accessibility'],
+                datasets: [{
+                    label: 'Small Blockers (BTC)',
+                    data: [95, 30, 30, 95, 40, 90],
+                    borderColor: 'rgba(247, 147, 26, 1)',
+                    backgroundColor: 'rgba(247, 147, 26, 0.2)',
+                    pointBackgroundColor: 'rgba(247, 147, 26, 1)'
+                }, {
+                    label: 'Big Blockers (BCH)',
+                    data: [60, 80, 85, 70, 80, 50],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    pointBackgroundColor: 'rgba(75, 192, 192, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: { color: '#e0e0e0' }
+                    }
+                },
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: { color: '#a0a0a0', backdropColor: 'transparent' },
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        pointLabels: { color: '#e0e0e0' }
+                    }
+                }
+            }
+        });
+
+        // Power Projection Chart
+        const powerCtx = document.getElementById('powerChart').getContext('2d');
+        new Chart(powerCtx, {
+            type: 'line',
+            data: {
+                labels: ['Territorial', 'Maritime', 'Air', 'Nuclear', 'Cyber', 'Electro-Cyber (PoW)'],
+                datasets: [{
+                    label: 'Power Projection Evolution',
+                    data: [10, 30, 50, 70, 85, 100],
+                    borderColor: 'rgba(247, 147, 26, 1)',
+                    backgroundColor: 'rgba(247, 147, 26, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Physical Grounding', color: '#a0a0a0' },
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+
+        // Price History Chart
+        const priceCtx = document.getElementById('priceChart').getContext('2d');
+        new Chart(priceCtx, {
+            type: 'line',
+            data: {
+                labels: ['2010', '2013', '2017', '2020', '2021', '2024', '2026'],
+                datasets: [{
+                    label: 'Bitcoin Price (USD)',
+                    data: [0.1, 1000, 20000, 10000, 69000, 100000, 120000],
+                    borderColor: 'rgba(247, 147, 26, 1)',
+                    backgroundColor: 'rgba(247, 147, 26, 0.2)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { labels: { color: '#e0e0e0' } }
+                },
+                scales: {
+                    y: {
+                        type: 'logarithmic',
+                        ticks: {
+                            color: '#a0a0a0',
+                            callback: function(value) {
+                                if (value === 1 || value === 10 || value === 100 || value === 1000 || value === 10000 || value === 100000) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            }
+                        },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    },
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: 'rgba(255,255,255,0.1)' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

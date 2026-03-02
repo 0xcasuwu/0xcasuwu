@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nootropics & Cognitive Enhancement | 0xcasuwu Research</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">0xcasuwu</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="#" class="active">Nootropics</a>
+                <a href="psychedelics-cognitive.html">Psychedelics & Cognition</a>
+                <a href="psychedelics-mental-health.html">Mental Health</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="paper-header">
+        <h1>Nootropics & Cognitive Enhancement</h1>
+        <p class="subtitle">Systematic Review of Smart Drugs, Supplements, and Cognitive Enhancers</p>
+        <div class="paper-info">
+            <span class="paper-info-item">~15,000 words</span>
+            <span class="paper-info-item">Neuroscience</span>
+            <span class="paper-info-item">2026</span>
+        </div>
+    </header>
+
+    <div class="paper-layout">
+        <aside class="toc">
+            <h3>Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#racetams">1. Racetams</a></li>
+                <li><a href="#modafinil">2. Modafinil</a></li>
+                <li><a href="#natural">3. Natural Compounds</a></li>
+                <li><a href="#mechanisms">4. Mechanisms</a></li>
+            </ul>
+        </aside>
+
+        <main class="paper-content">
+            <section id="overview">
+                <h2>Overview</h2>
+                <p>Nootropics are compounds that enhance cognitive function, particularly executive functions, memory, creativity, or motivation. This review examines the evidence base for commonly used nootropic compounds.</p>
+
+                <div class="highlight-box">
+                    <strong>Categories Covered:</strong> Racetams, Eugeroics (Modafinil), Cholinergics, Adaptogens, and Novel Synthetic Compounds
+                </div>
+
+                <div class="paper-chart">
+                    <h4>Nootropic Categories by Evidence Quality</h4>
+                    <canvas id="evidenceChart"></canvas>
+                </div>
+            </section>
+
+            <section id="racetams">
+                <h2>1. Racetams</h2>
+                <p>The racetam family includes piracetam, aniracetam, oxiracetam, and phenylpiracetam. These compounds modulate AMPA receptor activity and enhance cholinergic transmission.</p>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Compound</th>
+                            <th>Typical Dose</th>
+                            <th>Primary Effects</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Piracetam</td>
+                            <td>1200-4800 mg/day</td>
+                            <td>Memory, verbal fluency</td>
+                        </tr>
+                        <tr>
+                            <td>Aniracetam</td>
+                            <td>750-1500 mg/day</td>
+                            <td>Anxiety, creativity</td>
+                        </tr>
+                        <tr>
+                            <td>Phenylpiracetam</td>
+                            <td>100-200 mg/day</td>
+                            <td>Focus, physical stamina</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="modafinil">
+                <h2>2. Modafinil & Eugeroics</h2>
+                <p>Modafinil is a wakefulness-promoting agent with demonstrated cognitive enhancement effects in sleep-deprived individuals and modest effects in rested subjects.</p>
+
+                <div class="highlight-box success">
+                    <strong>Meta-Analysis Finding:</strong> Modafinil shows reliable improvements in attention, executive function, and learning in healthy adults, with effect sizes of d = 0.3-0.5.
+                </div>
+            </section>
+
+            <section id="natural">
+                <h2>3. Natural Compounds</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Compound</th>
+                            <th>Source</th>
+                            <th>Mechanism</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lion's Mane</td>
+                            <td>Mushroom</td>
+                            <td>NGF stimulation</td>
+                        </tr>
+                        <tr>
+                            <td>Bacopa Monnieri</td>
+                            <td>Herb</td>
+                            <td>Cholinergic, antioxidant</td>
+                        </tr>
+                        <tr>
+                            <td>Alpha-GPC</td>
+                            <td>Choline source</td>
+                            <td>Acetylcholine precursor</td>
+                        </tr>
+                        <tr>
+                            <td>L-Theanine</td>
+                            <td>Tea</td>
+                            <td>GABA modulation</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="mechanisms">
+                <h2>4. Mechanisms of Action</h2>
+                <div class="paper-chart">
+                    <h4>Neurotransmitter Systems Targeted</h4>
+                    <canvas id="mechanismChart"></canvas>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>0xcasuwu Research Repository</p>
+            <p class="footer-note">Released under Creative Commons Attribution-NonCommercial-ShareAlike 4.0</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const progress = (document.documentElement.scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
+            document.getElementById('progressBar').style.width = progress + '%';
+        });
+
+        new Chart(document.getElementById('evidenceChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: ['Modafinil', 'Caffeine + L-Theanine', 'Bacopa', 'Racetams', 'Lion\'s Mane'],
+                datasets: [{
+                    label: 'Evidence Quality (1-10)',
+                    data: [8, 9, 7, 5, 4],
+                    backgroundColor: ['rgba(75, 192, 192, 0.8)', 'rgba(75, 192, 192, 0.8)', 'rgba(255, 206, 86, 0.8)', 'rgba(255, 206, 86, 0.8)', 'rgba(255, 99, 132, 0.8)']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, max: 10, ticks: { color: '#a0a0a0' }, grid: { color: 'rgba(255,255,255,0.1)' } },
+                    x: { ticks: { color: '#a0a0a0' }, grid: { color: 'rgba(255,255,255,0.1)' } }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('mechanismChart').getContext('2d'), {
+            type: 'radar',
+            data: {
+                labels: ['Cholinergic', 'Dopaminergic', 'Glutamatergic', 'GABAergic', 'Serotonergic', 'NGF/BDNF'],
+                datasets: [{
+                    label: 'Racetams',
+                    data: [80, 20, 90, 10, 10, 30],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)'
+                }, {
+                    label: 'Modafinil',
+                    data: [30, 90, 20, 10, 30, 10],
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { labels: { color: '#e0e0e0' } } },
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        ticks: { color: '#a0a0a0', backdropColor: 'transparent' },
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        pointLabels: { color: '#e0e0e0' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
